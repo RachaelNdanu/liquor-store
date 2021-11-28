@@ -1,0 +1,140 @@
+/*master styles*/
+body{
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*nav styles*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side{
+    display: flex;
+}
+
+
+.nav-wrapper> .left-side> div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    display: flex;
+}
+.nav-link-wrapper{
+
+    border-bottom: 1px  transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+
+color: green;
+transition:color 0.5s;
+text-decoration: none;
+
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+
+
+.nav-wrapper> .right-side> div{
+    
+    color: black;
+    font-weight: 100;
+    font-size: 150%;
+    font-style: italic;
+
+}
+.brand{
+    text-transform: uppercase;
+}
+
+
+
+/*liquorstore styles*/
+.liquorstore-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ .subtitle{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10%;
+    font-weight: 700;
+    color:white;
+   font-size: 200%;
+   font-style: italic;
+   
+}
+.img-text-wrapper:hover .subtitle {
+    font-weight: 900;
+    color:gold;
+}
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.clickhere-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50%;
+    font-style: italic;
+}
+/*socialmedia styles*/
+.container2{
+    height: 50vh;
+    width: 100%;
+    
+}
+.icons a {
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background:#fff;
+    text-decoration: none;
+    font-size: 40px;
+    margin: 10px;
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.1);
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition:background-position 0.5s ,color 0.5s;
+}
+
+
+.icons a:nth-child(1) {
+    color: blue;
+    background-image: linear-gradient(white 50% , blue 50%);
+}
+
+.icons a:nth-child(2) {
+    color:purple;
+    background-image: linear-gradient(white 50% , purple 50%);
+}
+
+.icons a:nth-child(3) {
+    color: red;
+    background-image: linear-gradient(white 50% ,red 50%);
+}
+
+.icons a:nth-child(4) {
+    color:lightskyblue;
+    background-image: linear-gradient(white 50% ,lightskyblue 50%);
+}
+ .icons a:hover{
+     background-position:0% 100%;
+     color: white;
+ }
